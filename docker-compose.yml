@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fileservice.application:
+    image: ${DOCKER_REGISTRY-}fileserviceapplication
+    build:
+      context: .
+      dockerfile: FileService.Application/Dockerfile
